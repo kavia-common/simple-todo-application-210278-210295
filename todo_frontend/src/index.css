@@ -8,6 +8,25 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Courier New', Monaco, Consolas, monospace;
+}
+
+/* Custom scrollbar for retro aesthetic */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
 }

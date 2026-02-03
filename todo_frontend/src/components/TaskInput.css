@@ -1,0 +1,66 @@
+.task-input-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 3px 3px 0 rgba(59, 130, 246, 0.3);
+  transform: translate(-1px, -1px);
+}
+
+.task-input::placeholder {
+  color: #9ca3af;
+}
+
+.add-button {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.add-button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .task-input-form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+}
